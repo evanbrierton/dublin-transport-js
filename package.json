@@ -1,0 +1,25 @@
+{
+  "name": "dublintransportjs",
+  "version": "1.0.0",
+  "description": "An attempt to better organise the APIs of the three major public transport providers in the Dublin Area.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dublin",
+    "transport",
+    "bus",
+    "luas",
+    "dart"
+  ],
+  "author": "Evan Brierton <evanbrierton@icloud.com> (https://evanbrierton.github.io/)",
+  "license": "ISC"
+}
