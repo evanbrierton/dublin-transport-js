@@ -1,35 +1,10 @@
----
-title: API Reference
-
-language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - javascript
-
-toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
-
-includes:
-  - errors
-
-search: true
----
-
 # Introduction
 
 Welcome to the Dublin Area Transport API. This API can be used to access various endpoints which provide information on the three major forms of public transport in the Dublin area, Dublin Bus, Luas and DART.
 
-We have language bindings in Shell and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
-
 # Authentication
 
 > To authorize, use this code:
-
-```shell
-# With shell, you can just pass the correct header with each request
-curl "https://dublintransportapi.herokuapp.com/api/endpoint-here"
-  -H "Auth: your-key-here"
-```
 
 ```javascript
 const api = require('dublintransportjs');
@@ -39,9 +14,9 @@ api.authorize('your-key-here');
 
 > Make sure to replace `your-key-here` with your API key.
 
-The Dublin Area Transport API uses API keys to allow access to the API. You can register a new API key at our [developer portal](https://dublintransportapi.herokuapp.com/developers).
+The Dublin Area Transport API uses API keys to allow higher limits to the API. In the future you will be able to register a new API key at our [developer portal](https://dublintransportapi.herokuapp.com/developers).
 
-An API key need not be included in the request but you will be limited to 120 requests per hour without one, you can contact us at the developer portal if you require more requests.
+An API key need not be included in the request but you will be limited to 120 requests per hour without one, you will be able to contact us at the developer portal if you require more requests.
 
 `Auth: your-key-here`
 
@@ -52,11 +27,6 @@ You must replace <code>your-key-here</code> with your personal API key.
 # Bus
 
 ## Get All Stops
-
-```shell
-curl "https://dublintransportapi.herokuapp.com/api/bus/stops"
-  -H "Auth: your-key-here"
-```
 
 ```javascript
 const api = require('dublintransportjs');
@@ -102,11 +72,6 @@ Remember — include your auth token in the header!
 
 
 ## Get Real Time Information
-
-```shell
-curl "https://dublintransportapi.herokuapp.com/api/bus/stops/543"
-  -H "Auth: your-key-here"
-```
 
 ```javascript
 const api = require('dublintransportjs');
@@ -156,13 +121,6 @@ Parameter | Description
 ID | The ID of the bus stop to retrieve.
 
 ## Find Nearby Stops
-
-```shell
-curl "http://localhost:3000/api/bus/stops/nearby"
-  -H "Auth: your-key-here"
-  -H "Content-Type: application/json"
-  -d '{ "location": { "latitude": 53.3498, "longitude": -6.2603 } }'
-```
 
 ```javascript
 const api = require('dublintransportjs');
@@ -214,11 +172,6 @@ location | An object containing latitude and longitude coordinates.
 
 ## Get All Stops
 
-```shell
-curl "https://dublintransportapi.herokuapp.com/api/dart/stops"
-  -H "Auth: your-key-here"
-```
-
 ```javascript
 const api = require('dublintransportjs');
 
@@ -263,11 +216,6 @@ Remember — include your auth token in the header!
 
 
 ## Get Real Time Information
-
-```shell
-curl "https://dublintransportapi.herokuapp.com/api/dart/stops/dlery"
-  -H "Auth: your-key-here"
-```
 
 ```javascript
 const api = require('dublintransportjs');
@@ -379,11 +327,6 @@ location | An object containing latitude and longitude coordinates.
 
 ## Get All Stops
 
-```shell
-curl "https://dublintransportapi.herokuapp.com/api/luas/stops"
-  -H "Auth: your-key-here"
-```
-
 ```javascript
 const api = require('dublintransportjs');
 
@@ -428,11 +371,6 @@ Remember — include your auth token in the header!
 
 
 ## Get Real Time Information
-
-```shell
-curl "https://dublintransportapi.herokuapp.com/api/luas/stops/che"
-  -H "Auth: your-key-here"
-```
 
 ```javascript
 const api = require('dublintransportjs');
@@ -483,13 +421,6 @@ CODE | The code of the luas stop to retrieve.
 
 ## Find Nearby Stops
 
-```shell
-curl "http://localhost:3000/api/luas/stops/nearby"
-  -H "Auth: your-key-here"
-  -H "Content-Type: application/json"
-  -d '{ "location": { "latitude": 53.3498, "longitude": -6.2603 } }'
-```
-
 ```javascript
 const api = require('dublintransportjs');
 
@@ -539,13 +470,6 @@ location | An object containing latitude and longitude coordinates.
 # Nearby
 
 ## Get Nearby Stops
-
-```shell
-curl "https://dublintransportapi.herokuapp.com/api/nearby"
-  -H "Auth: your-key-here"
-  -H "Content-Type: application/json"
-  -d '{ "location": { "latitude": 53.3515, "longitude": -6.2497 } }'
-```
 
 ```javascript
 const api = require('dublintransportjs');

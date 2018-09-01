@@ -1,6 +1,6 @@
 {
-  "name": "dublintransportjs",
-  "version": "1.0.0",
+  "name": "dublin-transport-js",
+  "version": "1.0.1",
   "description": "An attempt to better organise the APIs of the three major public transport providers in the Dublin Area.",
   "main": "index.js",
   "dependencies": {
